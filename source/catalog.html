@@ -6,7 +6,9 @@
   </head>
   <body>
     <header class="main-header">
-      <img class="main-header__logo-img" src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" width="86" height="35">
+      <a class="main-header__logo-link" href="index.html">
+        <img class="main-header__logo-img" src="http://placehold.it/86x35" alt="Логотип магазина MISHKA" width="86" height="35">
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
 
@@ -17,10 +19,10 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+              <a class="main-nav__link main-nav__link--unclick">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Вязание на заказ</a>
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list">
@@ -37,9 +39,9 @@
     </header>
 
     <main class="main-content">
-      <div class="promo-catalog">
-        <h1 class="promo-catalog__title">Каталог товаров</h1>
-      </div>
+      <section class="promo-section">
+        <h1 class="promo-section__title">Каталог товаров</h1>
+      </section>
 
       <section class="catalog">
         <h2 class="visually-hidden">Товары</h2>
