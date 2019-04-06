@@ -5,8 +5,125 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+    <header class="page-header">
+      <img class="page-header__logo-img" src="http://placehold.it/86x35" alt="Логотип магазина Мишка" width="86" height="35">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть выпадающее меню"></button>
+      <nav class="main-nav" role="navigation">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="user-menu" aria-label="меню пользователя">
+        <ul class="user-menu__list">
+          <li class="user-menu__item">
+            <a class="user-menu__link user-menu__link--search" href="search.html">Поиск по сайту</a>
+          </li>
+          <li class="user-menu__item">
+            <a class="user-menu__link user-menu__link--basket" href="basket.html">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="main-content">
+      <section class="promo">
+        <div class="promo__wrapper">
+          <h1 class="visually-hidden">Интернет магазин милых вещиц для дома</h1>
+          <p class="promo__title">Милые штуки ручной работы для дома</p>
+          <div class="promo__categories">
+            <a class="promo__button promo__button--interior" href="interior-items.html">Предметы интерьера</a>
+            <a class="promo__button promo__button--toys" href="kids-toys.html">Детские игрушки</a>
+          </div>
+        </div>
+      </section>
 
+      <section class="popular-product">
+        <div class="popular-product__wrapper">
+          <h2 class="popular-product__title">Вязаные корзинки</h2>
+          <b class="popular-product__week">Товар недели</b>
+          <p class="popular-product__descrition">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="popular-product__specifications table-specification">
+            <tr class="table-specification__row visually-hidden">
+              <th>Характеристика</th>
+              <th>Значение</th>
+            </tr>
+            <tr class="table-specification__row">
+              <td>Цвет:</td>
+              <td>«Тиффани»/серый</td>
+            </tr>
+            <tr class="table-specification__row">
+              <td>Диаметр:</td>
+              <td>25 см</td>
+            </tr>
+            <tr class="table-specification__row">
+              <td>Высота:</td>
+              <td>15 см</td>
+            </tr>
+          </table>
+          <img class="popular-product__img" src="http://placehold.it/260x315" alt="Товар недели – экологически чистая пряжа, ручной работы" width="260" height="315">
+          <p class="popular-product__price">Цена: 990 руб.</p>
+          <button class="popular-product__button button" type="button">Заказать</button>
+        </div>
+      </section>
+
+      <section class="about-us">
+        <div class="about-us__wrapper">
+          <h2 class="about-us__title">Коротко о нас:</h2>
+          <ul class="about-us__list">
+            <li class="about-us__item about-us__item--ecology">Экологически чистые материалы</li>
+            <li class="about-us__item about-us__item--nordic">Скандинавский стиль по российской цене</li>
+            <li class="about-us__item about-us__item--like">Увеличивает лайки на фотографиях</li>
+            <li class="about-us__item about-us__item--knitwork">Связано вручную с любовью и умилением</li>
+            <li class="about-us__item about-us__item--support">Поддержка отечественного производителя</li>
+            <li class="about-us__item about-us__item--box">Поставляется в подарочной упаковке</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer" role="contentinfo">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--ig" href="#">Наш Instagram</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--fb" href="#">Наш Facebook</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--tw" href="#">Наш Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__img" src="http://placehold.it/27x34" alt="Логотип HTML Academy" width="27" height="34">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal modal--order">
+      <h2 class="modal-order__title">Добавить в корзину</h2>
+      <p class="modal-order__size">Выберите размер:</p>
+      <form class="modal-order__form" action="https://echo.htmlacademy.ru" method="POST">
+        <label class="modal-order__label" for="-size-small">s</label>
+        <input class="modal-order__checkbox" type="checkbox" name="small" id="-size-small" checked>
+        <label class="modal-order__label" for="size-medium">m</label>
+        <input class="modal-order__checkbox" type="checkbox" name="medium" id="size-medium">
+        <label class="modal-order__label" for="size-large">l</label>
+        <input class="modal-order__checkbox" type="checkbox" name="large" id="size-large">
+        <button class="modal-order__button button" type="submit">Добавить</button>
+      </form>
+    </div>
   </body>
 </html>
