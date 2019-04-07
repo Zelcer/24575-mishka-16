@@ -9,26 +9,26 @@
       <a class="page-header__logo-link" href="index.html" title="Ссылка на главную страницу магазина">
         <img class="page-header__logo-img" src="http://placehold.it/86x35" alt="Логотип магазина Мишка" width="86" height="35">
       </a>
-      <button class="main-nav__toggle" type="button" aria-label="Открыть выпадающее меню"></button>
+      <button class="page-header__toggle" type="button" aria-label="Открыть выпадающее меню"></button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--unclick">Каталог товаров</a>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--unclick">Каталог товаров</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
         </div>
       </nav>
       <div class="user-menu" aria-label="меню пользователя">
-        <ul class="user-menu__list">
-          <li class="user-menu__item">
-            <a class="user-menu__link user-menu__link--search" href="search.html">Поиск по сайту</a>
+        <ul class="user-menu__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--search" href="search.html">Поиск по сайту</a>
           </li>
-          <li class="user-menu__item">
-            <a class="user-menu__link user-menu__link--basket" href="basket.html">Корзина: пока пуста</a>
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--basket" href="basket.html">Корзина: пока пуста</a>
           </li>
         </ul>
       </div>
@@ -77,6 +77,20 @@
               <button class="product-card__basket" type="button">Добавить в корзину</button>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="product-video">
+        <div class="product-video__wrapper">
+          <h2 class="product-video__title">Процесс производства</h2>
+          <div class="product-video__film">
+            <img class="product-video__screen" src="http://placehold.it/260x150" alt="Видео заставка о процессе производства продукции" width="260" height="150">
+          </div>
+          <button type="button">
+            <img src="http://placehold.it/101x77" alt="" width="101" height="77">
+          </button>
+          <p class="product-video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="product-video__button button" href="order.html">Сделать заказ</a>
         </div>
       </section>
     </main>
