@@ -1,0 +1,31 @@
+.categories__button {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+    &:active {
+      color: rgba($color: #ffffff, $alpha: 0.3);
+    }
+}
+
+.categories__button--interior {
+  background-color: #63d1bb;
+    &:hover,
+    &:focus {
+      background-color: #59d5bc;
+    }
+    &:active {
+      background-color: #59d5bc;
+    }
+}
+
+.categories__button--toys {
+  background-color: #56c3b2;
+    &:hover,
+    &:focus {
+      background-color: #46c1ae;
+    }
+    &:active {
+      background-color: #46c1ae;
+    }
+}
