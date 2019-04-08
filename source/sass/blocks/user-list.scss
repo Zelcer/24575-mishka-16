@@ -5,11 +5,13 @@
 .user-list__link {
   font-size: 17px;
   color: #000000;
-    &:hover,
-    &:focus {
-      color: $black-60;
-    }
-    &:active {
-      color: $black-30;
-    }
+
+  &:hover,
+  &:focus {
+    color: $black-60;
+  }
+
+  &:active {
+    color: $black-30;
+  }
 }

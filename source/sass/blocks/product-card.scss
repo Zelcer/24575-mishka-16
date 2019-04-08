@@ -1,12 +1,14 @@
 .product-card {
   border: 1px solid #ececec;
-    &:hover,
-    &:focus {
-      box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
-    }
-    &:active {
-      box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
-    }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .product-card__link {
@@ -14,13 +16,15 @@
   line-height: 24px;
   font-weight: 700;
   color: $black;
-    &:hover,
-    &:focus {
-      color: $black-60;
-    }
-    &active {
-      color: $black-30;
-    }
+
+  &:hover,
+  &:focus {
+    color: $black-60;
+  }
+
+  &active {
+    color: $black-30;
+  }
 }
 
 .product-card__title {

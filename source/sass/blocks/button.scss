@@ -8,12 +8,14 @@
 
   background-color: transparent;
   border: 2px solid $gray;
-    &:hover,
-    &:focus {
-      color: $white;
-      background-color: $gray;
-    }
-    &:active {
-      color: $white-30;
-    }
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $gray;
+  }
+
+  &:active {
+    color: $white-30;
+  }
 }
