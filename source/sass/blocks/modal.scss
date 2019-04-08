@@ -1,6 +1,6 @@
 .modal {
-  background-color: #ffffff;
-  border: 1px solid #c6c6c6;
+  background-color: $white;
+  border: 1px solid $light-gray;
   box-shadow: 0px 5px 10px 0 rgba($color: #000101, $alpha: 0.25);
 
   /*Временный стили*/
@@ -19,18 +19,18 @@
   margin: 0;
   font-size: 15px;
   line-height: 30px;
-  color: #444444;
+  color: $gray;
 }
 
 .modal-order__button {
-  color: #ffffff;
-  background-color: #63d1bb;
+  color: $white;
+  background-color: $seaform-blue;
   border: none;
     &:hover {
-      color: #ffffff;
-      background-color: #63d1bb;
+      color: $white;
+      background-color: $seaform-blue;
     }
     &:active {
-      color: #ffffff;
+      color: $white;
     }
 }

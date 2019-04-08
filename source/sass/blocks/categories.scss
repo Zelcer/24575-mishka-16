@@ -2,14 +2,14 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
-  color: #ffffff;
+  color: $white;
     &:active {
-      color: rgba($color: #ffffff, $alpha: 0.3);
+      color: $white-30;
     }
 }
 
 .categories__button--interior {
-  background-color: #63d1bb;
+  background-color: $seaform-blue;
     &:hover,
     &:focus {
       background-color: #59d5bc;
