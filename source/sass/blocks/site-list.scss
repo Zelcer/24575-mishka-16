@@ -1,5 +1,5 @@
 .site-list {
-  @include list-reset ();
+  @include list-reset;
 }
 
 .site-list__link {
