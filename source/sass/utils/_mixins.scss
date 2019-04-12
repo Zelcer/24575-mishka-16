@@ -22,3 +22,9 @@
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
+
+@mixin label-font {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}

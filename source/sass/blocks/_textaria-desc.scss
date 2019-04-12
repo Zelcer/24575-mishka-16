@@ -1,0 +1,26 @@
+.textaria-desc__label {
+  @include label-font;
+  color: $accent-color-light;
+  text-transform: uppercase;
+}
+
+.textaria-desc__textarea {
+  font: inherit;
+  color: $secondary-color;
+  border: 2px solid $secondary-color;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $accent-border;
+  }
+
+  &:active {
+    background-color: $accent-border;
+  }
+}
