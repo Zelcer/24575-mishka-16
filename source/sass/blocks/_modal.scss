@@ -1,6 +1,6 @@
 .modal {
   background-color: $white;
-  border: 1px solid $light-gray;
+  border: 1px solid $border-modal;
   box-shadow: 0 5px 10px 0 rgba($color: #000101, $alpha: 0.25);
 
   /*Временный стили*/
@@ -19,17 +19,17 @@
   margin: 0;
   font-size: 15px;
   line-height: 30px;
-  color: $gray;
+  color: $secondary-color;
 }
 
 .modal-order__button {
   color: $white;
-  background-color: $seaform-blue;
+  background-color: $accent-color-light;
   border: none;
 
   &:hover {
     color: $white;
-    background-color: $seaform-blue;
+    background-color: $accent-color-light;
   }
 
   &:active {

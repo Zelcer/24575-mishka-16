@@ -4,14 +4,14 @@
 
 .site-list__link {
   font-size: 17px;
-  color: #000000;
+  color: $primary-text;
 
   &:hover,
   &:focus {
-    color: $black-60;
+    color: $primary-text-60;
   }
 
   &:active {
-    color: $black-30;
+    color: $primary-text-30;
   }
 }

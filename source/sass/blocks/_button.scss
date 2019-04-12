@@ -1,18 +1,18 @@
 .button {
   font: inherit;
   font-weight: 700;
-  color: $gray;
+  color: $secondary-color;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
 
   background-color: transparent;
-  border: 2px solid $gray;
+  border: 2px solid $secondary-color;
 
   &:hover,
   &:focus {
     color: $white;
-    background-color: $gray;
+    background-color: $secondary-color;
   }
 
   &:active {

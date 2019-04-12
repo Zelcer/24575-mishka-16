@@ -1,10 +1,13 @@
 // Цвета
-$gray: #444444;
-$light-gray: #c6c6c6;
-$black: #000000;
-$black-30: rgba(0, 0, 0, 0.3);
-$black-60: rgba(0, 0, 0, 0.6);
+$primary-text: #000000;
+$primary-text-light: #010000;
+$primary-text-30: rgba($primary-text, 0.3);
+$primary-text-60: rgba($primary-text, 0.6);
+$secondary-color: #444444;
 $white: #ffffff;
-$white-30: rgba(255, 255, 255, 0.3);
-$white-darck: #f1f1f1;
-$seaform-blue: #63d1bb;
+$white-30: rgba($white, 0.3);
+$accent-color-light: #63d1bb;
+$accent-color-dark: #56c3b2;
+$border-modal: #c6c6c6;
+$border-card: #ececec;
+$secondary-background: #f1f1f1;

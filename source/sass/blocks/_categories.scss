@@ -10,7 +10,7 @@
 }
 
 .categories__button--interior {
-  background-color: $seaform-blue;
+  background-color: $accent-color-light;
 
   &:hover,
   &:focus {
@@ -23,7 +23,7 @@
 }
 
 .categories__button--toys {
-  background-color: #56c3b2;
+  background-color: $accent-color-dark;
 
   &:hover,
   &:focus {
