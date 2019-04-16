@@ -1,0 +1,38 @@
+.modal {
+  background-color: $white;
+  border: 1px solid $border-modal;
+  box-shadow: 0 5px 10px 0 rgba($color: #000101, $alpha: 0.25);
+
+  /*Временный стили*/
+  outline: 2px solid darkturquoise;
+}
+
+.modal-order__title {
+  margin: 0;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.modal-order__size {
+  margin: 0;
+  font-size: 15px;
+  line-height: 30px;
+  color: $secondary-color;
+}
+
+.modal-order__button {
+  color: $white;
+  background-color: $accent-color-light;
+  border: none;
+
+  &:hover {
+    color: $white;
+    background-color: $accent-color-light;
+  }
+
+  &:active {
+    color: $white;
+  }
+}

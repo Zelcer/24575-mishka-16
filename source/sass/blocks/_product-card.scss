@@ -1,0 +1,46 @@
+.product-card {
+  border: 1px solid $border-card;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.product-card__link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $primary-text;
+
+  &:hover,
+  &:focus {
+    color: $primary-text-60;
+  }
+
+  &active {
+    color: $primary-text-30;
+  }
+}
+
+.product-card__title {
+  margin: 0;
+}
+
+.product-card__text {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 30px;
+  color: $secondary-color;
+}
+
+.product-card__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+}
