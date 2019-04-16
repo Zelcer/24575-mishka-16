@@ -4,12 +4,6 @@
   list-style: none;
 }
 
-@mixin title-h2() {
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: 700;
-}
-
 @mixin block-item-state() {
   border: 1px solid $border-card;
 

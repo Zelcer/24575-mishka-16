@@ -18,12 +18,12 @@
   color: $secondary-color;
 
   &:hover,
-  &:hover {
-    color: #46c1ae;
+  &:focus {
+    color: $accent-color-dark-interaction;
   }
 
   &:active {
-    color: rgba(70, 193, 174, 0.3);
+    color: $accent-color-dark-interaction-30;
   }
 }
 

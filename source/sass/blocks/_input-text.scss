@@ -11,12 +11,12 @@
   font: inherit;
   color: $secondary-color;
   border: none;
-  border-bottom: 2px solid $primary-text;
+  border-bottom: 2px solid $primary-text-color;
 
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
-    color: rgba(68, 68, 68, 0.3);
+    color: $secondary-color-30;
   }
 
   &:hover,
