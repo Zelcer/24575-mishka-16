@@ -1,0 +1,30 @@
+.reviews__title {
+  margin: 0;
+
+  @include title-h2;
+}
+
+.reviews__list {
+  @include list-reset;
+}
+
+.reviews__text {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 30px;
+  color: $secondary-color;
+}
+
+.reviews__author {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__nickname {
+  line-height: 30px;
+  font-weight: 400;
+  color: $secondary-color;
+}
