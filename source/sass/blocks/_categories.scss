@@ -1,4 +1,11 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
 .categories__button {
+  min-height: 103px;
+
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
@@ -32,5 +39,30 @@
 
   &:active {
     background-color: #46c1ae;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .categories {
+    flex-direction: row;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .categories__button {
+    width: 334px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .categories {
+    width: 1050px;
+  }
+
+  .categories__button {
+    width: 525px;
   }
 }
