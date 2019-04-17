@@ -1,0 +1,11 @@
+.offers-menu {
+  display: none;
+  width: 650px;
+  min-height: 49px; // Временно
+}
+
+@media (min-width: $desctop-width) {
+  .offers-menu {
+    display: block;
+  }
+}

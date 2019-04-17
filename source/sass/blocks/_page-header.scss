@@ -1,5 +1,56 @@
 .page-header {
-  /*Временный стили*/
-  outline: 2px solid darkturquoise;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 395px; // Временно
+
+  background-color: turquoise; // Временно
+}
+
+.page-header__inner {
+  min-height: 79px; // Временно
+  background-color: tomato; // Временно
+}
+
+.page-header__text {
+  display: none;
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 24px;
+  color: $secondary-color;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    width: 668px;
+    margin: 0 auto;
+    min-height: 137px; // Временно
+  }
+
+  .page-header__inner {
+    order: -1;
+    width: 321px;
+    min-height: 88px; // Временно
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__text {
+    display: block;
+    min-height: 49px; // Временно
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .page-header {
+    width: 1050px;
+  }
+
+  .page-header__inner {
+    width: 149px;
+  }
 }

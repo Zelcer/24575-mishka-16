@@ -1,0 +1,20 @@
+.offers-list {
+  display: flex;
+  @include list-reset;
+}
+
+.offers-list__link {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $primary-text;
+
+  &:hover,
+  &:focus {
+    color: $primary-text-60;
+  }
+
+  &:active {
+    color: $primary-text-30;
+  }
+}
