@@ -1,0 +1,30 @@
+.input-text__label {
+  @include label-font;
+}
+
+.input-text__label--color {
+  color: $accent-color-light;
+  text-transform: uppercase;
+}
+
+.input-text__input {
+  font: inherit;
+  color: $secondary-color;
+  border: none;
+  border-bottom: 2px solid $primary-text-color;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: $secondary-color-30;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $accent-border;
+  }
+
+  &:active {
+    background-color: $accent-border;
+  }
+}

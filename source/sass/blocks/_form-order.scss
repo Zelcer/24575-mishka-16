@@ -1,0 +1,20 @@
+.form-order__group {
+  padding: 0;
+  border: none;
+}
+
+.form-order__group-title {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $accent-color-light;
+  text-transform: uppercase;
+}
+
+.form-order__required-text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: $secondary-color;
+}

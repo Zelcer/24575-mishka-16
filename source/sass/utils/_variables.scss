@@ -1,13 +1,18 @@
 // Цвета
-$primary-text: #000000;
+$primary-text-color: #000000;
 $primary-text-light: #010000;
-$primary-text-30: rgba($primary-text, 0.3);
-$primary-text-60: rgba($primary-text, 0.6);
+$primary-text-color-30: rgba($primary-text-color, 0.3);
+$primary-text-color-60: rgba($primary-text-color, 0.6);
 $secondary-color: #444444;
+$secondary-color-30: rgba($secondary-color, 0.3);
 $white: #ffffff;
 $white-30: rgba($white, 0.3);
 $accent-color-light: #63d1bb;
+$accent-color-light-interaction: #59d5bc;
 $accent-color-dark: #56c3b2;
+$accent-color-dark-interaction: #46c1ae;
+$accent-color-dark-interaction-30: rgba($accent-color-dark-interaction, 0.3);
+$accent-border: #62d1ba;
 $border-modal: #c6c6c6;
 $border-card: #ececec;
 $secondary-background: #f1f1f1;

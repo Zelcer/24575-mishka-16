@@ -4,14 +4,14 @@
 
 .user-list__link {
   font-size: 17px;
-  color: $primary-text;
+  color: $primary-text-color;
 
   &:hover,
   &:focus {
-    color: $primary-text-60;
+    color: $primary-text-color-60;
   }
 
   &:active {
-    color: $primary-text-30;
+    color: $primary-text-color-30;
   }
 }
