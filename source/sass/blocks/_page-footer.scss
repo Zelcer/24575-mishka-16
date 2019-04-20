@@ -1,7 +1,43 @@
 .page-footer {
+  min-height: 160px; // Временно
   background-color: $secondary-background;
+}
 
-  /*Временный стили*/
-  outline: 2px solid darkturquoise;
-  margin-bottom: 20px;
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 668px;
+    min-height: 143px; // Временно
+    margin: 0 auto;
+  }
+
+  .page-footer__logo {
+    display: block;
+    align-self: center;
+  }
+
+  .page-footer__socials {
+    align-self: center;
+  }
+
+  .page-footer__copyright {
+    align-self: center;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .page-footer__wrapper {
+    width: 1050px;
+  }
 }

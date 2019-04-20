@@ -1,3 +1,8 @@
+.popular-product {
+  margin-bottom: 34px;
+  padding-bottom: 36px;
+}
+
 .popular-product__wrapper {
   position: relative;
   padding: 0 30px;
@@ -49,6 +54,7 @@
 
 @media (min-width: $tablet-width) {
   .popular-product {
+    margin-bottom: 60px;
     padding-bottom: 53px;
   }
 
@@ -106,6 +112,7 @@
 
 @media (min-width: $desctop-width) {
   .popular-product {
+    margin-bottom: 70px;
     padding-bottom: 73px;
   }
 
