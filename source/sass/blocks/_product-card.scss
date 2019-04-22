@@ -1,8 +1,8 @@
 .product-card {
+  @include block-item-state;
+
   display: flex;
   flex-direction: column;
-
-  @include block-item-state;
 }
 
 .product-card__link {

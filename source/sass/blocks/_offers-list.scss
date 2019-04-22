@@ -1,7 +1,7 @@
 .offers-list {
-  display: flex;
-
   @include list-reset;
+
+  display: flex;
 }
 
 .offers-list__link {

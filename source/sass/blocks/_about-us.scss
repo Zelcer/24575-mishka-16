@@ -12,10 +12,10 @@
 }
 
 .about-us__list {
+  @include list-reset;
+
   display: flex;
   flex-wrap: wrap;
-
-  @include list-reset;
 }
 
 .about-us__item {

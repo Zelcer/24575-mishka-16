@@ -1,9 +1,9 @@
 .socials__list {
+  @include list-reset;
+
   display: flex;
   justify-content: center;
   min-height: 80px; // Временно
-
-  @include list-reset;
 }
 
 .socials__item {
