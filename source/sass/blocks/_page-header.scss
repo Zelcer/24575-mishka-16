@@ -30,7 +30,6 @@
   }
 
   .page-header__inner {
-    order: -1;
     width: 321px;
     min-height: 88px; // Временно
   }
@@ -40,6 +39,7 @@
   }
 
   .page-header__text {
+    order: 1;
     display: block;
     min-height: 49px; // Временно
   }
@@ -51,6 +51,11 @@
   }
 
   .page-header__inner {
+    order: 2;
     width: 149px;
+  }
+
+  .page-header__text {
+    order: 2;
   }
 }
