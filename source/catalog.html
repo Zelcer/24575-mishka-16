@@ -140,5 +140,25 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal modal-order">
+      <h2 class="modal-order__title">Добавить в корзину</h2>
+      <p class="modal-order__size">Выберите размер:</p>
+      <form class="modal-order__form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="modal-order__wrapper">
+          <label class="modal-order__label" for="size-small">s</label>
+          <input class="modal-order__checkbox" type="checkbox" name="small" id="size-small" checked>
+        </div>
+        <div class="modal-order__wrapper">
+          <label class="modal-order__label" for="size-medium">m</label>
+          <input class="modal-order__checkbox" type="checkbox" name="medium" id="size-medium">
+        </div>
+        <div class="modal-order__wrapper">
+          <label class="modal-order__label" for="size-large">l</label>
+          <input class="modal-order__checkbox" type="checkbox" name="large" id="size-large">
+        </div>
+        <button class="modal-order__button button" type="submit">Добавить</button>
+      </form>
+    </div>
   </body>
 </html>
