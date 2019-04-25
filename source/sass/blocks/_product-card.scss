@@ -1,5 +1,8 @@
 .product-card {
   @include block-item-state;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card__link {
@@ -34,4 +37,30 @@
   font-size: 15px;
   line-height: 24px;
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    flex-direction: row;
+  }
+
+  .product-card__link {
+    font-size: 20px;
+  }
+
+  .product-card__text {
+    font-size: 15px;
+  }
+
+  .product-card__price {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    flex-direction: column;
+    width: 316px;
+    min-height: 659px; // Временно
+  }
 }

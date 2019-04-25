@@ -1,3 +1,17 @@
 .socials__list {
   @include list-reset;
+
+  display: flex;
+  justify-content: center;
+  min-height: 80px; // Временно
+}
+
+.socials__item {
+  align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .socials__list {
+    min-height: 34px; // Временно
+  }
 }

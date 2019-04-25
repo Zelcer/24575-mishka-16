@@ -2,13 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header__logo-img" src="http://placehold.it/86x35" alt="Логотип магазина Мишка" width="86" height="35">
-      <button class="page-header__toggle" type="button" aria-label="Открыть выпадающее меню"></button>
+      <div class="page-header__inner">
+        <img class="page-header__logo-img" src="http://placehold.it/86x35" alt="Логотип магазина Мишка" width="86" height="35">
+        <button class="page-header__toggle" type="button" aria-label="Открыть выпадающее меню"></button>
+      </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -21,23 +24,34 @@
           </ul>
         </div>
       </nav>
-      <div class="user-menu" aria-label="меню пользователя">
+      <div class="user-menu" aria-label="Меню пользователя">
         <ul class="user-menu__list user-list">
           <li class="user-list__item">
-            <a class="user-list__link user-list__link--search" href="search.html">Поиск по сайту</a>
+            <a class="user-list__link user-list__link--search" href="search.html"><span class="user-list__link-text">Поиск по сайту</span></a>
           </li>
           <li class="user-list__item">
             <a class="user-list__link user-list__link--basket" href="basket.html">Корзина: пока пуста</a>
           </li>
         </ul>
       </div>
+      <div class="offers-menu" aria-label="Меню специальных предложений">
+        <ul class="offers-menu__list offers-list">
+          <li class="offers-list__item">
+            <a class="offers-list__link" href="new-product.html">Новые поступления</a>
+          </li>
+          <li class="offers-list__item">
+            <a class="offers-list__link" href="sale.html">Распродажа</a>
+          </li>
+        </ul>
+      </div>
+      <p class="page-header__text">Бесплатная доставка по России</p>
     </header>
 
     <main class="main-content">
       <section class="promo">
         <div class="promo__wrapper">
           <h1 class="visually-hidden">Интернет магазин милых вещиц для дома</h1>
-          <p class="promo__title">Милые штуки ручной работы для дома</p>
+          <p class="promo__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</p>
           <div class="promo__categories categories">
             <a class="categories__button categories__button--interior" href="interior-items.html">Предметы интерьера</a>
             <a class="categories__button categories__button--toys" href="kids-toys.html">Детские игрушки</a>
@@ -47,30 +61,38 @@
 
       <section class="popular-product">
         <div class="popular-product__wrapper">
-          <h2 class="popular-product__title title">Вязаные корзинки</h2>
-          <b class="popular-product__week">Товар недели</b>
-          <p class="popular-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="popular-product__specifications table-specification">
-            <tr class="table-specification__row visually-hidden">
-              <th>Характеристика</th>
-              <th>Значение</th>
-            </tr>
-            <tr class="table-specification__row">
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr class="table-specification__row">
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr class="table-specification__row">
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </table>
-          <img class="popular-product__img" src="http://placehold.it/260x315" alt="Товар недели – экологически чистая пряжа, ручной работы" width="260" height="315">
-          <p class="popular-product__price">Цена: 990 руб.</p>
-          <button class="popular-product__button button" type="button">Заказать</button>
+          <div class="popular-product__header">
+            <h2 class="popular-product__title title">Вязаные корзинки</h2>
+            <b class="popular-product__week">Товар недели</b>
+          </div>
+          <div class="popular-product__body">
+            <p class="popular-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="popular-product__specifications table-specification">
+              <tr class="table-specification__row visually-hidden">
+                <th>Характеристика</th>
+                <th>Значение</th>
+              </tr>
+              <tr class="table-specification__row">
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr class="table-specification__row">
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr class="table-specification__row">
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </table>
+          </div>
+          <div class="popular-product__aside">
+            <img class="popular-product__img" src="http://placehold.it/260x315" alt="Товар недели – экологически чистая пряжа, ручной работы" width="260" height="315">
+          </div>
+          <div class="popular-product__footer">
+            <p class="popular-product__price">Цена: 990 руб.</p>
+            <button class="popular-product__button button" type="button">Заказать</button>
+          </div>
         </div>
       </section>
 
@@ -127,6 +149,7 @@
 
     <footer class="page-footer" role="contentinfo">
       <div class="page-footer__wrapper">
+        <img class="page-footer__logo" src="http://placehold.it/102x34" alt="Логотип магазина" width="102" height="34">
         <div class="page-footer__socials socials">
           <ul class="socials__list">
             <li class="socials__item">

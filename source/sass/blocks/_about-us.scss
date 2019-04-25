@@ -1,13 +1,90 @@
+.about-us {
+  margin-bottom: 61px;
+}
+
+.about-us__wrapper {
+  padding: 0 30px;
+}
+
 .about-us__title {
   margin: 0;
+  margin-bottom: 31px;
 }
 
 .about-us__list {
   @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about-us__item {
+  margin-bottom: 53px;
+
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    margin-bottom: 82px;
+  }
+
+  .about-us__wrapper {
+    width: 668px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .about-us__title {
+    margin-bottom: 47px;
+  }
+
+  .about-us__item {
+    width: 300px;
+    margin-bottom: 65px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &--nordic {
+      order: 2;
+    }
+
+    &--like {
+      order: 4;
+      margin-bottom: 0;
+    }
+
+    &--knitwork {
+      order: 1;
+    }
+
+    &--support {
+      order: 3;
+    }
+
+    &--box {
+      order: 5;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    margin-bottom: 89px;
+  }
+
+  .about-us__wrapper {
+    width: 1050px;
+  }
+
+  .about-us__list {
+    width: 700px;
+  }
 }

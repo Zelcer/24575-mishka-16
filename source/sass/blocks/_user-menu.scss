@@ -1,0 +1,18 @@
+.user-menu {
+  min-height: 158px; // Временно
+  background-color: palevioletred; // Временно
+}
+
+@media (min-width: $tablet-width) {
+  .user-menu {
+    width: 347px;
+    min-height: 88px; // Временно
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-menu {
+    order: 2;
+    width: 451px;
+  }
+}

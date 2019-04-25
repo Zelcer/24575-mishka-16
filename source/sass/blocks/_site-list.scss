@@ -4,6 +4,8 @@
 
 .site-list__link {
   font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
   color: $primary-text-color;
 
   &:hover,
@@ -13,5 +15,21 @@
 
   &:active {
     color: $primary-text-color-30;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__link {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    font-size: 17px;
   }
 }

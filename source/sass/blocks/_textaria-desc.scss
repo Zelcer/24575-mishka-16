@@ -1,5 +1,6 @@
 .textaria-desc__label {
   @include label-font;
+
   color: $accent-color-light;
   text-transform: uppercase;
 }
