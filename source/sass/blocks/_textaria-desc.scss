@@ -1,11 +1,24 @@
+.textaria-desc {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  margin-bottom: 18px;
+}
+
 .textaria-desc__label {
   @include label-font;
+
+  margin-bottom: 23px;
 
   color: $accent-color-light;
   text-transform: uppercase;
 }
 
 .textaria-desc__textarea {
+  width: 100%;
+  padding-top: 17px;
+  padding-left: 18px;
+
   font: inherit;
   color: $secondary-color;
   border: 2px solid $secondary-color;
@@ -23,5 +36,15 @@
 
   &:active {
     background-color: $accent-border;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .textaria-desc {
+    width: 668px;
+  }
+
+  .textaria-desc__textarea {
+    width: 501px;
   }
 }

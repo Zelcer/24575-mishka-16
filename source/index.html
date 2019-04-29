@@ -111,7 +111,7 @@
       </section>
 
       <section class="reviews">
-        <div class="reviews-wrapper slider">
+        <div class="reviews__wrapper slider">
           <h2 class="reviews__title title">Отзывы</h2>
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
@@ -126,21 +126,23 @@
             <button class="slider__toggle slider__toggle--back" type="button">Назад</button>
             <button class="slider__toggle slider__toggle--forward" type="button">Вперёд</button>
           </div>
+          <a class="reviews__button button" href="review.html">Написать</a>
         </div>
-        <a class="reviews-button button" href="review.html">Написать</a>
       </section>
 
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
-          <p class="contacts_inner">
-            <span class="contacts__email">e-mail:</span>
-            <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </p>
-          <p class="contacts_inner">
-            <span class="contacts__address">адрес:</span>
-            <span class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
-          </p>
+          <div class="contacts__info">
+            <h2 class="contacts__title">Контакты</h2>
+            <p class="contacts__inner">
+              <span class="contacts__email">e-mail:</span>
+              <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </p>
+            <p class="contacts__inner">
+              <span class="contacts__address">адрес:</span>
+              <span class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+            </p>
+          </div>
           <div class="contacts__map map"></div>
           <a class="contacts__button button" href="feedback.html">Напишите нам</a>
         </div>
@@ -172,7 +174,7 @@
       </div>
     </footer>
 
-    <div class="modal modal--order">
+    <div class="modal modal-order">
       <h2 class="modal-order__title">Добавить в корзину</h2>
       <p class="modal-order__size">Выберите размер:</p>
       <form class="modal-order__form" action="https://echo.htmlacademy.ru" method="POST">

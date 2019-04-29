@@ -107,7 +107,7 @@
           <div class="product-video__film">
             <img class="product-video__screen" src="http://placehold.it/260x150" alt="Видео заставка о процессе производства продукции" width="260" height="150">
           </div>
-          <button type="button">
+          <button class="product-video__button-play" type="button">
             <img src="http://placehold.it/101x77" alt="" width="101" height="77">
           </button>
           <p class="product-video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -140,5 +140,25 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal modal-order">
+      <h2 class="modal-order__title">Добавить в корзину</h2>
+      <p class="modal-order__size">Выберите размер:</p>
+      <form class="modal-order__form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="modal-order__wrapper">
+          <label class="modal-order__label" for="size-small">s</label>
+          <input class="modal-order__checkbox" type="checkbox" name="small" id="size-small" checked>
+        </div>
+        <div class="modal-order__wrapper">
+          <label class="modal-order__label" for="size-medium">m</label>
+          <input class="modal-order__checkbox" type="checkbox" name="medium" id="size-medium">
+        </div>
+        <div class="modal-order__wrapper">
+          <label class="modal-order__label" for="size-large">l</label>
+          <input class="modal-order__checkbox" type="checkbox" name="large" id="size-large">
+        </div>
+        <button class="modal-order__button button" type="submit">Добавить</button>
+      </form>
+    </div>
   </body>
 </html>
