@@ -1,7 +1,38 @@
+.product-order {
+  margin-bottom: 30px;
+}
+
 .product-order__text {
+  width: 668px;
   margin: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 30px;
 
   font-size: 13px;
   line-height: 24px;
   color: $secondary-color;
+}
+
+@media (min-width: $tablet-width) {
+  .product-order {
+    margin-bottom: 50px;
+  }
+
+  .product-order__text {
+    margin-bottom: 70px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-order__text {
+    width: 1050px;
+    padding-left: 161px;
+    padding-right: 161px;
+    box-sizing: border-box;
+  }
 }

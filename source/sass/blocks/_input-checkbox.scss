@@ -1,3 +1,23 @@
+.input-checkbox {
+  display: flex;
+  margin-bottom: 43px;
+
+  &:last-child {
+    margin-bottom: 25px;
+  }
+}
+
 .input-checkbox__label {
   @include label-font;
+
+  width: 113px;
+  padding-left: 62px;
+}
+
+@media (min-width: $tablet-width) {
+  .input-checkbox__label {
+    padding-left: 80px;
+
+    font-size: 19px;
+  }
 }

@@ -1,3 +1,8 @@
+.input-text {
+  width: 260px;
+  margin-bottom: 24px;
+}
+
 .input-text__label {
   @include label-font;
 }
@@ -8,10 +13,14 @@
 }
 
 .input-text__input {
+  width: 100%;
+  padding: 18px 0;
+
   font: inherit;
   color: $secondary-color;
   border: none;
   border-bottom: 2px solid $primary-text-color;
+  background-color: transparent;
 
   &::placeholder {
     font-size: 17px;
@@ -26,5 +35,15 @@
 
   &:active {
     background-color: $accent-border;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .input-text {
+    width: 100%;
+  }
+
+  .input-text__input {
+    width: 360px;
   }
 }
