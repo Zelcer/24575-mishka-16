@@ -1,11 +1,11 @@
-.textaria-desc {
+.textarea-desc {
   display: flex;
   flex-wrap: wrap;
   width: 260px;
   margin-bottom: 18px;
 }
 
-.textaria-desc__label {
+.textarea-desc__label {
   @include label-font;
 
   margin-bottom: 23px;
@@ -14,7 +14,7 @@
   text-transform: uppercase;
 }
 
-.textaria-desc__textarea {
+.textarea-desc__textarea {
   width: 100%;
   padding-top: 17px;
   padding-left: 18px;
@@ -40,11 +40,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .textaria-desc {
+  .textarea-desc {
     width: 668px;
   }
 
-  .textaria-desc__textarea {
+  .textarea-desc__textarea {
     width: 501px;
   }
 }
