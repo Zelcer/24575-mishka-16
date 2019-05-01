@@ -59,13 +59,10 @@
 }
 
 .contacts__map {
-  width: 320px;
-  height: 457px;
-  margin-bottom: 39px;
+  position: relative;
 
-  background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: left 145px top 139px, left;
+  width: 100%;
+  margin-bottom: 39px;
 }
 
 .contacts__button {
@@ -117,12 +114,7 @@
   }
 
   .contacts__map {
-    align-self: center;
-    width: 768px;
     margin-bottom: 55px;
-
-    background-image: url("../img/icon-map-pin.svg"), url("../img/map-tablet@1x.jpg");
-    background-position: left 360px top 139px, left;
   }
 }
 
