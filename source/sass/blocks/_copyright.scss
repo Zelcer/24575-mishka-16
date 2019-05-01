@@ -3,11 +3,31 @@
   justify-content: center;
 }
 
-.copyright__text {
+.copyright__link {
+  display: flex;
+}
+
+.copyright__link-text {
   align-self: center;
   margin: 0;
+  margin-right: 30px;
 
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
+  color: $primary-text-color;
+}
+
+.copyright__link path {
+  fill: $accent-color-light;
+}
+
+.copyright__link:hover path,
+.copyright__link:focus path {
+  fill: $accent-color-dark-interaction;
+}
+
+.copyright__link:active svg,
+.copyright__link:active .copyright__link-text {
+  opacity: 0.3;
 }

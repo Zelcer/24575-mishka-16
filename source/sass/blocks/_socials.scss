@@ -1,17 +1,24 @@
+.socials {
+  width: 142px;
+}
+
 .socials__list {
   @include list-reset;
 
   display: flex;
   justify-content: center;
-  min-height: 80px; // Временно
+  justify-content: space-between;
 }
 
 .socials__item {
   align-self: center;
 }
 
-@media (min-width: $tablet-width) {
-  .socials__list {
-    min-height: 34px; // Временно
-  }
+.socials__link:hover path,
+.socials__link:focus path {
+  fill: $accent-color-dark-interaction;
+}
+
+.socials__link:active svg {
+  opacity: 0.3;
 }
