@@ -1,3 +1,22 @@
+.input-radio {
+  display: flex;
+  margin-bottom: 24px;
+}
+
 .input-radio__label {
   @include label-font;
+
+  padding-left: 62px;
+}
+
+@media (min-width: $tablet-width) {
+  .input-radio {
+    margin-bottom: 48px;
+  }
+
+  .input-radio__label {
+    padding-left: 80px;
+
+    font-size: 19px;
+  }
 }
