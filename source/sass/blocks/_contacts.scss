@@ -9,7 +9,7 @@
 }
 
 .contacts__info {
-  margin-bottom: 12px;
+  margin-bottom: 9px;
   padding: 0 30px;
 }
 
@@ -17,7 +17,7 @@
   position: relative;
 
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 25px;
 
   font-size: 18px;
   line-height: 30px;
@@ -64,14 +64,14 @@
   position: relative;
 
   width: 100%;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 }
 
 .contacts__button {
   align-self: center;
-  width: 81.25%;
-  padding-top: 19px;
-  padding-bottom: 20px;
+  width: 80.25%;
+  padding-top: 13px;
+  padding-bottom: 15px;
 
   font-size: 18px;
 }
@@ -90,14 +90,14 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-bottom: 61px;
+    margin-bottom: 56px;
     padding-right: 0;
     padding-left: 0;
   }
 
   .contacts__title {
     width: 666px;
-    margin-bottom: 65px;
+    margin-bottom: 49px;
     padding-left: 0;
 
     font-size: 43px;
@@ -107,7 +107,7 @@
       content: "";
       position: absolute;
       right: 0;
-      bottom: -5px;
+      bottom: -16px;
 
       width: 47px;
       height: 81px;
@@ -124,7 +124,7 @@
   }
 
   .contacts__email {
-    margin-right: 26px;
+    margin-right: 22px;
   }
 
   .contacts__address {
@@ -137,7 +137,7 @@
   }
 
   .contacts__map {
-    margin-bottom: 55px;
+    margin-bottom: 52px;
   }
 
   .contacts__button {
@@ -160,7 +160,7 @@
   .contacts__info {
     flex-direction: column;
     margin-bottom: 0;
-    padding-top: 55px;
+    padding-top: 70px;
     padding-left: 173px;
   }
 
@@ -190,7 +190,7 @@
   }
 
   .contacts__button {
-    margin-top: -66px;
+    margin-top: -58px;
     margin-left: 173px;
   }
 }

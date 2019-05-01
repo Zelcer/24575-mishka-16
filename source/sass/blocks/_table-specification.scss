@@ -11,6 +11,13 @@
 }
 
 .table-specification__row td {
+  min-width: 77px;
   padding-top: 10px;
   padding-bottom: 11px;
+}
+
+@media (min-width: $tablet-width) {
+  .table-specification__row td {
+    min-width: 68px;
+  }
 }

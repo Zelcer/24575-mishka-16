@@ -1,5 +1,5 @@
 .about-us {
-  margin-bottom: 61px;
+  margin-bottom: 54px;
 }
 
 .about-us__wrapper {
@@ -8,7 +8,7 @@
 
 .about-us__title {
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .about-us__list {
@@ -21,7 +21,7 @@
 .about-us__item {
   position: relative;
 
-  padding-top: 85px;
+  padding-top: 83px;
 
   font-size: 17px;
   line-height: 20px;
@@ -57,33 +57,33 @@
 }
 
 .about-us__item--ecology svg {
-  top: 0;
-  left: 5px;
+  top: 1px;
+  left: 8px;
 }
 
 .about-us__item--nordic svg {
-  top: 30px;
+  top: 29px;
   left: 0;
 }
 
 .about-us__item--like svg {
-  top: 35px;
-  left: 5px;
+  top: 34px;
+  left: 8px;
 }
 
 .about-us__item--knitwork svg {
-  top: 32px;
-  left: 2px;
+  top: 31px;
+  left: 3px;
 }
 
 .about-us__item--support svg {
-  top: 33px;
+  top: 32px;
   left: -6px;
 }
 
 .about-us__item--box svg {
-  top: 31px;
-  left: 0;
+  top: 30px;
+  left: 3px;
 }
 
 .about-us__item path {
@@ -92,7 +92,7 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    margin-bottom: 82px;
+    margin-bottom: 84px;
   }
 
   .about-us__wrapper {
@@ -106,7 +106,7 @@
   }
 
   .about-us__item {
-    padding-top: 113px;
+    padding-top: 110px;
 
     font-size: 20px;
     line-height: 22px;
@@ -157,7 +157,7 @@
   }
 
   .about-us__item--knitwork svg {
-    top: 2px;
+    top: 4px;
   }
 
   .about-us__item--support svg {
@@ -171,7 +171,7 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    margin-bottom: 89px;
+    margin-bottom: 92px;
   }
 
   .about-us__wrapper {
@@ -179,7 +179,7 @@
   }
 
   .about-us__title {
-    margin-bottom: 44px;
+    margin-bottom: 46px;
     padding-left: 173px;
   }
 
@@ -198,5 +198,32 @@
 
   .about-us__item--like {
     margin-right: 139px;
+  }
+
+  .about-us__item--ecology svg {
+    top: 3px;
+    left: 11px;
+  }
+
+  .about-us__item--nordic svg {
+    left: 3px;
+  }
+
+  .about-us__item--like svg {
+    top: 64px;
+    left: 11px;
+  }
+
+  .about-us__item--knitwork svg {
+    top: 5px;
+    left: 5px;
+  }
+
+  .about-us__item--support svg {
+    left: -4px;
+  }
+
+  .about-us__item--box svg {
+    left: 4px;
   }
 }

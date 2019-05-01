@@ -31,3 +31,9 @@
 .copyright__link:active .copyright__link-text {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright__link svg {
+    padding-top: 8px;
+  }
+}

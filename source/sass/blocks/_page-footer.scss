@@ -24,13 +24,12 @@
 }
 
 .page-footer__socials {
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     flex-direction: row;
-    justify-content: space-between;
     width: 668px;
     margin: 0 auto;
     padding-top: 51px;
@@ -40,6 +39,7 @@
   .page-footer__logo {
     display: block;
     align-self: center;
+    margin-right: 160px;
   }
 
   .page-footer__socials {
@@ -49,11 +49,16 @@
 
   .page-footer__copyright {
     align-self: center;
+    margin-left: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 1050px;
+  }
+
+  .page-footer__logo {
+    margin-right: 351px;
   }
 }
