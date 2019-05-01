@@ -1,0 +1,32 @@
+.slider__toggle {
+  width: 130px;
+  padding: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  background-color: transparent;
+  border: none;
+
+  &--forward {
+    box-shadow: inset 1px 0 0 0 #ececec;
+  }
+}
+
+.slider__toggle:hover svg,
+.slider__toggle:focus svg {
+  opacity: 0.6;
+}
+
+.slider__toggle:active svg {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggle {
+    width: 85px;
+
+    &--forward {
+      box-shadow: none;
+    }
+  }
+}
