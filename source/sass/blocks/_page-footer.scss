@@ -14,9 +14,9 @@
   display: none;
 }
 
-.page-footer__logo:hover svg,
-.page-footer__logo:focus svg {
-  opacity: 0.6;
+.page-footer__logo:hover path,
+.page-footer__logo:focus path {
+  fill: $accent-color-dark-interaction;
 }
 
 .page-footer__logo:active svg {
