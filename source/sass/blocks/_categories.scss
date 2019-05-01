@@ -4,7 +4,11 @@
 }
 
 .categories__button {
-  min-height: 103px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
 
   font-size: 19px;
   line-height: 24px;
@@ -17,6 +21,8 @@
 }
 
 .categories__button--interior {
+  padding-right: 36px;
+
   background-color: $accent-color-light;
 
   &:hover,
@@ -30,6 +36,8 @@
 }
 
 .categories__button--toys {
+  padding-right: 27px;
+
   background-color: $accent-color-dark;
 
   &:hover,
@@ -42,6 +50,29 @@
   }
 }
 
+.categories__button-text {
+  width: 111px;
+  margin: 0;
+}
+
+.categories__button svg {
+  opacity: 0.5;
+  fill: #149080;
+}
+
+.categories__button path {
+  fill: #149080;
+}
+
+.categories__button:hover svg,
+.categories__button:focus svg {
+  opacity: 0.7;
+}
+
+.categories__button:active svg {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .categories {
     flex-direction: row;
@@ -51,9 +82,20 @@
 
   .categories__button {
     width: 334px;
+    padding-top: 35px;
+    padding-bottom: 39px;
+    padding-left: 36px;
 
     font-size: 20px;
     line-height: 30px;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &--toys {
+      padding-right: 34px;
+    }
   }
 }
 

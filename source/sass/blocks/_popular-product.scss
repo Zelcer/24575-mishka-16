@@ -1,6 +1,13 @@
 .popular-product {
+  position: relative;
+
   margin-bottom: 34px;
   padding-bottom: 36px;
+
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 320px 6px;
 }
 
 .popular-product__wrapper {
@@ -53,12 +60,23 @@
   line-height: 24px;
   font-weight: 700;
   color: $secondary-color;
+  text-align: center;
+}
+
+.popular-product__button {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
   .popular-product {
-    margin-bottom: 100px;
-    padding-bottom: 53px;
+    margin-bottom: 55px;
+    padding-bottom: 68px;
+
+    background-size: 772px 15px;
   }
 
   .popular-product__wrapper {
@@ -83,6 +101,7 @@
   }
 
   .popular-product__week {
+    align-self: flex-end;
     width: 70px;
     margin: 0;
 
@@ -93,6 +112,7 @@
   .popular-product__body {
     width: 292px;
     margin-right: auto;
+    margin-bottom: 59px;
   }
 
   .popular-product__description {
@@ -108,19 +128,24 @@
 
   .popular-product__footer {
     width: 292px;
-    margin-top: -40px;
   }
 
   .popular-product__price {
     margin-bottom: 34px;
     font-size: 20px;
   }
+
+  .popular-product__button {
+    font-size: 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .popular-product {
-    margin-bottom: 70px;
-    padding-bottom: 73px;
+    margin-bottom: 47px;
+    padding-bottom: 96px;
+
+    background-size: 1050px 23px;
   }
 
   .popular-product__wrapper {
@@ -129,6 +154,7 @@
 
   .popular-product__header {
     margin-bottom: 52px;
+    padding-left: 45px;
   }
 
   .popular-product__title {
@@ -140,6 +166,13 @@
 
   .popular-product__week {
     order: -1;
+    margin-bottom: 5px;
+    margin-right: 58px;
+  }
+
+  .popular-product__body {
+    padding-left: 173px;
+    margin-bottom: 111px;
   }
 
   .popular-product__description {
@@ -148,5 +181,9 @@
 
   .popular-product__aside {
     width: 525px;
+  }
+
+  .popular-product__footer {
+    padding-left: 173px;
   }
 }
