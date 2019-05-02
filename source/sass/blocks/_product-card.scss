@@ -6,7 +6,7 @@
 }
 
 .product-card__img-link {
-  margin-bottom: 31px;
+  margin-bottom: 24px;
 }
 
 .product-card__info {
@@ -14,12 +14,12 @@
   flex-wrap: wrap;
   padding-left: 28px;
   padding-right: 28px;
-  padding-bottom: 30px;
+  padding-bottom: 27px;
 }
 
 .product-card__link {
   display: block;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 
   line-height: 24px;
   color: $primary-text-color;
@@ -44,8 +44,8 @@
 .product-card__text {
   width: 260px;
   margin: 0;
-  margin-bottom: 27px;
-  padding-bottom: 27px;
+  margin-bottom: 21px;
+  padding-bottom: 20px;
 
   font-size: 13px;
   line-height: 30px;
@@ -106,22 +106,32 @@
   .product-card__info {
     width: 50%;
     padding-right: 32px;
-    padding-top: 29px;
+    padding-top: 25px;
     box-sizing: border-box;
   }
 
-  .product-card__link {
+  .product-card__title {
     font-size: 20px;
+  }
+
+  .product-card:last-child .product-card__title {
+    width: 200px;
   }
 
   .product-card__text {
     width: 268px;
-    padding-bottom: 182px;
+    padding-bottom: 176px;
 
     font-size: 15px;
   }
 
+  .product-card:last-child .product-card__text {
+    padding-bottom: 152px;
+  }
+
   .product-card__price {
+    padding-left: 4px;
+
     font-size: 17px;
   }
 }
@@ -134,19 +144,25 @@
 
   .product-card__img-link {
     width: 100%;
-    margin-bottom: 29px;
+    min-height: 462px; // Временно
+    margin-bottom: 25px;
   }
 
   .product-card__info {
     width: 100%;
     padding-top: 0;
+    padding-left: 23px;
   }
 
   .product-card__link {
-    width: 200px;
+    width: 100%;
   }
 
   .product-card__text {
-    padding-bottom: 45px;
+    padding-bottom: 40px;
+  }
+
+  .product-card:last-child .product-card__text {
+    padding-bottom: 16px;
   }
 }
