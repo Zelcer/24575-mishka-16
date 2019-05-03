@@ -1,18 +1,38 @@
 .form-order__group {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   border: none;
+
+  &--three {
+    margin-bottom: 31px;
+  }
+
+  &--four {
+    margin-bottom: 32px;
+  }
+
+  &--five {
+    margin-bottom: 14px;
+  }
 }
 
 .form-order__group-wrapper {
   width: 320px;
-  margin-bottom: 19px;
   padding: 0 30px;
   box-sizing: border-box;
 }
 
+.form-order__group--four .form-order__input {
+  margin-bottom: 32px;
+}
+
 .form-order__legend-wrapper {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
+}
+
+.form-order__group--three .form-order__legend-wrapper {
+  margin-bottom: 28px;
 }
 
 .form-order__group-title {
@@ -31,7 +51,6 @@
 .form-order__required-text {
   margin: 0;
   margin-bottom: 31px;
-  padding: 0 30px;
 
   font-size: 14px;
   line-height: 16px;
@@ -41,6 +60,9 @@
 .form-order__button {
   display: block;
   margin: 0 auto;
+  padding: 15px 45px;
+
+  font-size: 17px;
 }
 
 @media (min-width: $tablet-width) {
@@ -51,7 +73,27 @@
 
   .form-order__group {
     width: 100%;
-    margin-bottom: 22px;
+    margin-bottom: 15px;
+
+    &--two {
+      padding-top: 66px;
+      padding-bottom: 12px;
+      margin-bottom: 51px;
+    }
+
+    &--three {
+      margin-bottom: 53px;
+    }
+
+    &--four {
+      padding-top: 46px;
+      padding-bottom: 48px;
+      margin-bottom: 50px;
+    }
+
+    &--five {
+      margin-bottom: 51px;
+    }
   }
 
   .form-order__group--color {
@@ -61,34 +103,75 @@
   .form-order__group-wrapper {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     width: 668px;
+    padding: 0;
     margin: 0 auto;
   }
 
+  .form-order__group--four .form-order__input {
+    margin-bottom: 19px;
+  }
+
   .form-order__legend-wrapper {
-    width: 165px;
     margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  .form-order__group--three .form-order__legend-wrapper {
+    margin-top: 17px;
   }
 
   .form-order__wrapper {
-    width: 503px;
+    justify-content: space-between;
+    width: 499px;
   }
 
   .form-order__required-text {
     order: 1;
+    margin-bottom: 0;
+    padding-top: 10px;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .form-order__button {
+    width: 230px;
     margin: 0;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .form-order__group--one {
+    margin-bottom: 13px;
+  }
+
+  .form-order__group--five {
+    margin-bottom: 47px;
+  }
+
   .form-order__group-wrapper {
     width: 1050px;
+    padding-left: 64px;
+
+    box-sizing: border-box;
   }
 
   .form-order__wrapper {
-    width: 765px;
+    justify-content: normal;
+    width: 873px;
+  }
+
+  .form-order__required-text {
+    padding-top: 11px;
+    padding-right: 174px;
+  }
+
+  .form-order__button {
+    margin-left: 111px;
   }
 }

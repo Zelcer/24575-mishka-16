@@ -1,8 +1,8 @@
 .textarea-desc {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   width: 260px;
-  margin-bottom: 18px;
 }
 
 .textarea-desc__label {
@@ -16,8 +16,9 @@
 
 .textarea-desc__textarea {
   width: 100%;
-  padding-top: 17px;
-  padding-left: 18px;
+  padding-top: 14px;
+  padding-left: 14px;
+  padding-bottom: 0;
 
   font: inherit;
   color: $secondary-color;
@@ -44,7 +45,21 @@
     width: 668px;
   }
 
+  .textarea-desc__label {
+    margin-right: auto;
+  }
+
   .textarea-desc__textarea {
-    width: 501px;
+    width: 481px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea-desc {
+    width: 811px;
+  }
+
+  .textarea-desc__textarea {
+    width: 680px;
   }
 }

@@ -3,7 +3,6 @@
 
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
 
   background-color: $secondary-background;
 }
@@ -23,7 +22,6 @@
 @media (min-width: $tablet-width) {
   .promo-section {
     margin-top: -41px;
-    margin-bottom: 66px;
 
     &::after {
       content: "";
@@ -49,7 +47,6 @@
 @media (min-width: $desktop-width) {
   .promo-section {
     margin-top: -43px;
-    margin-bottom: 120px;
   }
 
   .promo-section__title {

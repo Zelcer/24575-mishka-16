@@ -1,5 +1,5 @@
 .catalog {
-  padding: 0 30px;
+  padding: 30px 30px 0;
   margin-bottom: 32px;
 }
 
@@ -18,6 +18,7 @@
 @media (min-width: $tablet-width) {
   .catalog {
     padding: 0;
+    padding-top: 66px;
     margin-bottom: 52px;
   }
 
@@ -34,6 +35,7 @@
 @media (min-width: $desktop-width) {
   .catalog {
     margin-bottom: 55px;
+    padding-top: 120px;
   }
 
   .catalog__wrapper {
