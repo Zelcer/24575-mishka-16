@@ -9,6 +9,11 @@
   margin-bottom: 24px;
 }
 
+.product-card__img {
+  width: 260px;
+  height: 195px;
+}
+
 .product-card__info {
   display: flex;
   flex-wrap: wrap;
@@ -103,6 +108,11 @@
     line-height: 0;
   }
 
+  .product-card__img {
+    width: 334px;
+    height: 334px;
+  }
+
   .product-card__info {
     width: 50%;
     padding-right: 32px;
@@ -146,6 +156,11 @@
     width: 100%;
     min-height: 462px; // Временно
     margin-bottom: 25px;
+  }
+
+  .product-card__img {
+    width: 316px;
+    height: 462px;
   }
 
   .product-card__info {
