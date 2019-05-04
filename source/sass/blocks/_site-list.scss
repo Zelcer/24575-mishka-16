@@ -7,11 +7,11 @@
 }
 
 .site-list__item {
+  @include vertical-shadow;
+
   padding-top: 32px;
   padding-bottom: 30px;
   padding-left: 76px;
-
-  box-shadow: inset 0 -1px 0 0 $border-card;
 }
 
 .site-list__link {
@@ -55,8 +55,9 @@
     padding-right: 35px;
 
     &:last-child {
+      @include horizontal-shadow;
+
       padding-left: 35px;
-      box-shadow: inset 1px 0 0 $border-card;
     }
   }
 
