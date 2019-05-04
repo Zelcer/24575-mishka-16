@@ -1,5 +1,5 @@
 .about-us {
-  margin-bottom: 54px;
+  margin-bottom: 28px;
 }
 
 .about-us__wrapper {
@@ -15,41 +15,20 @@
   @include list-reset;
 
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
 .about-us__item {
   position: relative;
 
-  padding-top: 83px;
+  width: 250px;
+  margin-bottom: 26px;
+  padding-top: 57px;
 
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-
-  &:first-child {
-    padding-top: 57px;
-  }
-
-  &--ecology {
-    width: 175px;
-  }
-
-  &--nordic {
-    width: 200px;
-  }
-
-  &--like {
-    width: 181px;
-  }
-
-  &--knitwork {
-    width: 211px;
-  }
-
-  &--box {
-    width: 198px;
-  }
 }
 
 .about-us__item svg {
@@ -62,27 +41,27 @@
 }
 
 .about-us__item--nordic svg {
-  top: 29px;
+  top: 3px;
   left: 0;
 }
 
 .about-us__item--like svg {
-  top: 34px;
+  top: 8px;
   left: 8px;
 }
 
 .about-us__item--knitwork svg {
-  top: 31px;
+  top: 5px;
   left: 3px;
 }
 
 .about-us__item--support svg {
-  top: 32px;
+  top: 6px;
   left: -6px;
 }
 
 .about-us__item--box svg {
-  top: 30px;
+  top: 4px;
   left: 3px;
 }
 
@@ -92,7 +71,7 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    margin-bottom: 84px;
+    margin-bottom: 55px;
   }
 
   .about-us__wrapper {
@@ -102,76 +81,73 @@
   }
 
   .about-us__title {
-    margin-bottom: 47px;
+    margin-bottom: 20px;
+  }
+
+  .about-us__list {
+    flex-direction: row;
   }
 
   .about-us__item {
-    padding-top: 110px;
+    width: 334px;
+    margin-bottom: 28px;
+    padding-top: 83px;
 
     font-size: 20px;
     line-height: 22px;
 
-    &:nth-child(4) {
-      padding-top: 57px;
-    }
-
-    &--ecology {
-      width: 205px;
-      margin-right: 129px;
+    &--knitwork {
+      order: 1;
     }
 
     &--nordic {
       order: 2;
-      width: 235px;
-      margin-right: 99px;
-    }
-
-    &--like {
-      order: 4;
-      width: 212px;
-      margin-right: 123px;
-    }
-
-    &--knitwork {
-      order: 1;
-      width: 248px;
     }
 
     &--support {
       order: 3;
-      width: 295px;
+    }
+
+    &--like {
+      order: 4;
     }
 
     &--box {
       order: 5;
-      width: 233px;
     }
   }
 
+  .about-us__item--ecology svg {
+    top: 28px;
+    left: 10px;
+  }
+
   .about-us__item--nordic svg {
-    top: 57px;
+    top: 29px;
+    left: 2px;
   }
 
   .about-us__item--like svg {
-    top: 62px;
+    top: 35px;
   }
 
   .about-us__item--knitwork svg {
-    top: 4px;
+    top: 32px;
+    left: 4px;
   }
 
   .about-us__item--support svg {
-    top: 60px;
+    top: 33px;
   }
 
   .about-us__item--box svg {
-    top: 58px;
+    top: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-us {
-    margin-bottom: 92px;
+    margin-bottom: 36px;
   }
 
   .about-us__wrapper {
@@ -184,20 +160,13 @@
   }
 
   .about-us__list {
-    width: 700px;
     padding-left: 173px;
   }
 
-  .about-us__item--ecology {
-    margin-right: 145px;
-  }
-
-  .about-us__item--nordic {
-    margin-right: 115px;
-  }
-
-  .about-us__item--like {
-    margin-right: 139px;
+  .about-us__item {
+    width: 350px;
+    margin-bottom: 54px;
+    padding-top: 57px;
   }
 
   .about-us__item--ecology svg {
@@ -206,11 +175,12 @@
   }
 
   .about-us__item--nordic svg {
+    top: 4px;
     left: 3px;
   }
 
   .about-us__item--like svg {
-    top: 64px;
+    top: 9px;
     left: 11px;
   }
 
@@ -220,10 +190,12 @@
   }
 
   .about-us__item--support svg {
+    top: 7px;
     left: -4px;
   }
 
   .about-us__item--box svg {
-    left: 4px;
+    top: 4px;
+    left: 5px;
   }
 }
