@@ -56,12 +56,11 @@
 }
 
 .categories__button svg {
-  opacity: 0.5;
-  fill: #149080;
+  fill: $accent-color-svg-50;
 }
 
 .categories__button path {
-  fill: #149080;
+  fill: $accent-color-svg;
 }
 
 .categories__button:hover svg,
