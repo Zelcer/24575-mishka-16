@@ -9,8 +9,8 @@
   height: 100%;
 
   background-color: $white-90;
-}
 
-.modal-overlay__show {
-  display: block;
+  &--show {
+    display: block;
+  }
 }

@@ -5,8 +5,6 @@
   z-index: 4;
   transform: translate(-50%, -50%);
 
-  display: none;
-
   width: 320px;
   padding: 36px 30px 46px;
 
@@ -14,10 +12,6 @@
   border: 1px solid $border-modal;
   box-shadow: 0 5px 10px 0 rgba($color: #000101, $alpha: 0.25);
   box-sizing: border-box;
-}
-
-.modal__show {
-  display: block;
 }
 
 @media (min-width: $tablet-width) {
