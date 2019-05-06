@@ -1,14 +1,11 @@
 .product-order {
-  margin-bottom: 30px;
+  margin-bottom: 54px;
 }
 
 .product-order__text {
-  width: 668px;
   margin: 0;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 30px;
+  margin-bottom: 25px;
+  padding: 22px 30px 0;
 
   font-size: 13px;
   line-height: 24px;
@@ -18,10 +15,15 @@
 @media (min-width: $tablet-width) {
   .product-order {
     margin-bottom: 50px;
+    padding-top: 38px;
   }
 
   .product-order__text {
-    margin-bottom: 70px;
+    width: 612px;
+    margin: 0 auto;
+    margin-bottom: 74px;
+    padding-left: 0;
+    padding-right: 55px;
 
     font-size: 17px;
     line-height: 30px;
@@ -29,9 +31,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .product-order {
+    padding-top: 92px;
+  }
+
   .product-order__text {
     width: 1050px;
-    padding-left: 161px;
+    padding-left: 175px;
     padding-right: 161px;
     box-sizing: border-box;
   }

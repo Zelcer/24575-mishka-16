@@ -1,15 +1,59 @@
 .page-header {
+  position: relative;
+  z-index: 2;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  min-height: 395px; // Временно
-
-  background-color: turquoise; // Временно
 }
 
 .page-header__inner {
-  min-height: 79px; // Временно
-  background-color: tomato; // Временно
+  @include vertical-shadow;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  padding: 22px 30px;
+
+  box-sizing: border-box;
+}
+
+.page-header__toggle {
+  position: absolute;
+  right: 30px;
+
+  width: 20px;
+  height: 14px;
+  margin-top: 10px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.page-header--closed .page-header__toggle {
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+}
+
+.page-header--opened .page-header__toggle {
+  width: 21px;
+  height: 20px;
+  margin-top: 6px;
+
+  background-image: url("../img/icon-menu-close.svg");
+  background-repeat: no-repeat;
+}
+
+.page-header--nojs .page-header__toggle {
+  display: none;
+}
+
+.page-header--nojs .page-header__main-nav,
+.page-header--nojs .page-header__user-menu {
+  display: block;
 }
 
 .page-header__text {
@@ -21,17 +65,31 @@
   color: $secondary-color;
 }
 
+@media (max-width: $mobile-width-only) {
+  .page-header--closed .page-header__main-nav {
+    display: none;
+  }
+
+  .page-header--closed .page-header__user-menu {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
     width: 668px;
     margin: 0 auto;
-    min-height: 137px; // Временно
   }
 
   .page-header__inner {
-    width: 321px;
-    min-height: 88px; // Временно
+    padding-left: 0;
+    padding-right: 0;
+    box-shadow: none;
+  }
+
+  .page-header__logo-link {
+    align-self: center;
   }
 
   .page-header__toggle {
@@ -40,8 +98,9 @@
 
   .page-header__text {
     order: 1;
+    align-self: flex-end;
     display: block;
-    min-height: 49px; // Временно
+    margin-left: auto;
   }
 }
 
@@ -53,6 +112,8 @@
   .page-header__inner {
     order: 2;
     width: 149px;
+    padding-top: 9px;
+    padding-bottom: 7px;
   }
 
   .page-header__text {

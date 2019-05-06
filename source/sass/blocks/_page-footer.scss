@@ -1,42 +1,64 @@
 .page-footer {
-  min-height: 160px; // Временно
   background-color: $secondary-background;
 }
 
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 23px;
 }
 
 .page-footer__logo {
   display: none;
 }
 
+.page-footer__logo:hover path,
+.page-footer__logo:focus path {
+  fill: $accent-color-dark-interaction;
+}
+
+.page-footer__logo:active svg {
+  opacity: 0.3;
+}
+
+.page-footer__socials {
+  margin-bottom: 46px;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     flex-direction: row;
-    justify-content: space-between;
     width: 668px;
-    min-height: 143px; // Временно
     margin: 0 auto;
+    padding-top: 51px;
+    padding-bottom: 51px;
   }
 
   .page-footer__logo {
     display: block;
     align-self: center;
+    margin-right: 160px;
   }
 
   .page-footer__socials {
     align-self: center;
+    margin-bottom: 0;
   }
 
   .page-footer__copyright {
     align-self: center;
+    margin-left: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 1050px;
+  }
+
+  .page-footer__logo {
+    margin-right: 351px;
   }
 }

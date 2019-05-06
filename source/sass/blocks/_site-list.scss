@@ -1,5 +1,17 @@
 .site-list {
   @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.site-list__item {
+  @include vertical-shadow;
+
+  padding-top: 32px;
+  padding-bottom: 30px;
+  padding-left: 76px;
 }
 
 .site-list__link {
@@ -20,7 +32,15 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
-    display: flex;
+    flex-direction: row;
+  }
+
+  .site-list__item {
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 37px;
+    padding-top: 16px;
+    padding-bottom: 0;
   }
 
   .site-list__link {
@@ -29,6 +49,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list__item {
+    padding-top: 31px;
+    padding-bottom: 35px;
+    padding-right: 35px;
+
+    &:last-child {
+      @include horizontal-shadow;
+
+      padding-left: 35px;
+    }
+  }
+
   .site-list__link {
     font-size: 17px;
   }

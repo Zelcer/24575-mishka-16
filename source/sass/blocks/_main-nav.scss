@@ -1,13 +1,6 @@
-.main-nav {
-  min-height: 158px; // Временно
-  background-color: salmon; // Временно
-}
-
 @media (min-width: $tablet-width) {
   .main-nav {
     order: 1;
-    width: 321px;
-    min-height: 49px; // Временно
   }
 }
 
