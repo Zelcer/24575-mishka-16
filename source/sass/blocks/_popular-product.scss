@@ -52,6 +52,11 @@
   margin-bottom: 21px;
 }
 
+.popular-product__img {
+  width: 260px;
+  height: 315px;
+}
+
 .popular-product__price {
   margin: 0;
   margin-bottom: 25px;
@@ -128,6 +133,11 @@
     padding-top: 7px;
   }
 
+  .popular-product__img {
+    width: 333px;
+    height: 404px;
+  }
+
   .popular-product__footer {
     width: 292px;
     margin-top: -24px;
@@ -187,6 +197,11 @@
   .popular-product__aside {
     width: 525px;
     margin-top: -165px;
+  }
+
+  .popular-product__img {
+    width: 525px;
+    height: 636px;
   }
 
   .popular-product__footer {

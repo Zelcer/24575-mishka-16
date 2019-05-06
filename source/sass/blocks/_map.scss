@@ -4,3 +4,10 @@
   left: 50%;
   transform: translate(-30%, -85%);
 }
+
+@media (min-width: $desktop-width) {
+  .map__img {
+    width: 525px;
+    height: 457px;
+  }
+}

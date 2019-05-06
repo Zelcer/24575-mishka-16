@@ -37,6 +37,11 @@
   margin-bottom: 25px;
 }
 
+.product-video__screen {
+  width: 260px;
+  height: 150px;
+}
+
 .product-video__button-play {
   position: absolute;
   top: 50%;
@@ -104,8 +109,12 @@
   }
 
   .product-video__film {
-    min-height: 455px; // Временно
     margin-bottom: 39px;
+  }
+
+  .product-video__screen {
+    width: 668px;
+    height: 455px;
   }
 
   .product-video__text {
@@ -150,8 +159,12 @@
 
   .product-video__film {
     width: 682px;
-    min-height: 455px; // Временно
     margin-bottom: 0;
+  }
+
+  .product-video__screen {
+    width: 682px;
+    height: 455px;
   }
 
   .product-video__text {
