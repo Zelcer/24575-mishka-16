@@ -34,10 +34,6 @@
   &:focus {
     border-color: $accent-border;
   }
-
-  &:active {
-    background-color: $accent-border;
-  }
 }
 
 @media (min-width: $tablet-width) {
