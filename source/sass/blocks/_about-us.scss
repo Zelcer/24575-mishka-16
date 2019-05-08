@@ -1,9 +1,13 @@
 .about-us {
+  width: 320px;
   margin-bottom: 28px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-us__wrapper {
-  padding: 0 30px;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .about-us__title {
@@ -71,13 +75,12 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
+    width: 772px;
     margin-bottom: 55px;
   }
 
   .about-us__wrapper {
     width: 668px;
-    margin: 0 auto;
-    padding: 0;
   }
 
   .about-us__title {
@@ -147,6 +150,7 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
+    width: 1150px;
     margin-bottom: 36px;
   }
 

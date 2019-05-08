@@ -1,7 +1,10 @@
 .popular-product {
   position: relative;
 
+  width: 320px;
   margin-bottom: 28px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 41px;
 
   background-image: url("../img/bg-zigzag-line.svg");
@@ -12,7 +15,9 @@
 
 .popular-product__wrapper {
   position: relative;
-  padding: 0 30px;
+
+  width: 260px;
+  margin: 0 auto;
 }
 
 .popular-product__title {
@@ -78,6 +83,7 @@
 
 @media (min-width: $tablet-width) {
   .popular-product {
+    width: 772px;
     margin-bottom: 50px;
     padding-bottom: 67px;
 
@@ -88,8 +94,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 668px;
-    margin: 0 auto;
-    padding: 0;
   }
 
   .popular-product__header {
@@ -157,6 +161,7 @@
 
 @media (min-width: $desktop-width) {
   .popular-product {
+    width: 100%;
     margin-bottom: 59px;
     padding-bottom: 96px;
 

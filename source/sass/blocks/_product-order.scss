@@ -1,5 +1,8 @@
 .product-order {
+  width: 320px;
   margin-bottom: 54px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .product-order__text {
@@ -14,6 +17,7 @@
 
 @media (min-width: $tablet-width) {
   .product-order {
+    width: 100%;
     margin-bottom: 50px;
     padding-top: 38px;
   }
