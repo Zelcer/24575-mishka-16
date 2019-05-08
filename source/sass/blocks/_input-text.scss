@@ -54,6 +54,12 @@
   opacity: 0.2;
 }
 
+.input-text__input:hover + .input-text__icon,
+.input-text__input:focus + .input-text__icon {
+  fill: $accent-color-light;
+  opacity: 1;
+}
+
 @media (min-width: $tablet-width) {
   .input-text {
     display: flex;
