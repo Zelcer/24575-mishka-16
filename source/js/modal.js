@@ -1,17 +1,28 @@
 var indexButton = document.querySelector(".popular-product__button");
+var catalogButton = document.querySelector(".product-card__button");
 var overlay = document.querySelector(".modal-overlay");
-var close = document.querySelector(".modal-overlay");
 
-indexButton.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  overlay.classList.add("modal-overlay--show");
-});
+if (indexButton) {
+  indexButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    overlay.classList.add("modal-overlay--show");
+  });
+}
 
-/*close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modal.classList.remove("modal__show");
-  overlay.classList.remove("modal-overlay__show");
-});*/
+if (catalogButton) {
+  catalogButton.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    overlay.classList.add("modal-overlay--show");
+  });
+}
+
+window.addEventListener("click", outsideClick);
+
+function outsideClick(e) {
+  if (e.target == overlay) {
+    overlay.classList.remove("modal-overlay--show");
+  }
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
