@@ -21,7 +21,7 @@
 
 @media (min-width: $tablet-width) {
   .promo-section {
-    margin-top: -41px;
+    margin-top: -43px;
 
     &::after {
       content: "";
@@ -51,6 +51,7 @@
   }
 
   .promo-section__title {
+    padding-top: 94px;
     padding-bottom: 111px;
 
     font-size: 53px;
