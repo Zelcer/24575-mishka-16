@@ -45,6 +45,11 @@
   }
 }
 
+.input-radio__input:focus + .input-radio__label {
+  outline: 1px solid $accent-color-light;
+  outline-offset: 13px;
+}
+
 @media (min-width: $tablet-width) {
   .input-radio {
     margin-bottom: 55px;
@@ -71,6 +76,10 @@
     width: 20px;
     height: 20px;
   }
+}
+
+.input-radio__input:focus + .input-radio__label {
+  outline-offset: 17px;
 }
 
 @media (min-width: $desktop-width) {
