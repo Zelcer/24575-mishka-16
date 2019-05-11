@@ -81,10 +81,10 @@
 
     background-size: 33px 22px;
   }
-}
 
-.input-checkbox__input:focus + .input-checkbox__label {
-  outline-offset: 17px;
+  .input-checkbox__input:focus + .input-checkbox__label {
+    outline-offset: 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {

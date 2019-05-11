@@ -76,10 +76,10 @@
     width: 20px;
     height: 20px;
   }
-}
 
-.input-radio__input:focus + .input-radio__label {
-  outline-offset: 17px;
+  .input-radio__input:focus + .input-radio__label {
+    outline-offset: 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
