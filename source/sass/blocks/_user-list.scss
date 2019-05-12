@@ -11,13 +11,14 @@
 
   padding-top: 32px;
   padding-bottom: 30px;
-  padding-left: 76px;
+  padding-left: 31px;
 }
 
 .user-list__link {
   position: relative;
 
   display: block;
+  padding-left: 45px;
 
   font-size: 17px;
   line-height: 24px;
@@ -38,7 +39,7 @@
 .user-list__link--basket svg {
   position: absolute;
   top: 5px;
-  left: -45px;
+  left: 0;
 
   opacity: 0.2;
 }
@@ -72,12 +73,16 @@
 
     padding-top: 31px;
     padding-bottom: 35px;
-    padding-left: 83px;
+    padding-left: 31px;
 
     &:nth-child(1) {
       width: 84px;
       padding: 0;
     }
+  }
+
+  .user-list__link {
+    padding-left: 52px;
   }
 
   .user-list__link-text {
@@ -91,6 +96,5 @@
 
   .user-list__link--basket svg {
     top: 3px;
-    left: -52px;
   }
 }

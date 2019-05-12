@@ -1,14 +1,21 @@
 .product-video {
-  padding: 0 30px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 58px;
+  box-sizing: border-box;
 }
 
 .product-video__wrapper {
   @include block-item-state;
+
   position: relative;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .product-video__icon {
@@ -34,7 +41,12 @@
   position: relative;
 
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
+}
+
+.product-video__screen {
+  width: 260px;
+  height: 150px;
 }
 
 .product-video__button-play {
@@ -85,9 +97,12 @@
 
 @media (min-width: $tablet-width) {
   .product-video {
-    width: 668px;
-    margin: 0 auto;
+    width: 772px;
     margin-bottom: 63px;
+  }
+
+  .product-video__wrapper {
+    width: 668px;
   }
 
   .product-video__icon {
@@ -104,8 +119,12 @@
   }
 
   .product-video__film {
-    min-height: 455px; // Временно
-    margin-bottom: 39px;
+    margin-bottom: 35px;
+  }
+
+  .product-video__screen {
+    width: 668px;
+    height: 455px;
   }
 
   .product-video__text {
@@ -129,12 +148,13 @@
 
 @media (min-width: $desktop-width) {
   .product-video {
-    width: 1050px;
+    width: 1150px;
     margin-bottom: 105px;
   }
 
   .product-video__wrapper {
     align-items: flex-start;
+    width: 1050px;
     height: 455px;
   }
 
@@ -150,8 +170,12 @@
 
   .product-video__film {
     width: 682px;
-    min-height: 455px; // Временно
     margin-bottom: 0;
+  }
+
+  .product-video__screen {
+    width: 682px;
+    height: 455px;
   }
 
   .product-video__text {
@@ -165,6 +189,6 @@
     align-self: flex-start;
     margin-left: 79px;
     margin-right: 57px;
-    width: 226px;
+    width: 230px;
   }
 }

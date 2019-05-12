@@ -10,7 +10,7 @@
 
   background-color: $white;
   border: 1px solid $border-modal;
-  box-shadow: 0 5px 10px 0 rgba($color: #000101, $alpha: 0.25);
+  box-shadow: 0 5px 10px 0 $modal-shadow;
   box-sizing: border-box;
 }
 

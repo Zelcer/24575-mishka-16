@@ -1,8 +1,10 @@
 // Цвета
 $primary-text-color: #000000;
 $primary-text-light: #010000;
+$primary-text-color-10: rgba($primary-text-color, 0.1);
 $primary-text-color-30: rgba($primary-text-color, 0.3);
 $primary-text-color-60: rgba($primary-text-color, 0.6);
+$modal-shadow: rgba(0, 1, 1, 0.25);
 $secondary-color: #444444;
 $secondary-color-30: rgba($secondary-color, 0.3);
 $secondary-color-10: rgba($secondary-color, 0.1);
@@ -20,6 +22,7 @@ $accent-color-svg-50: rgba($accent-color-svg, 0.5);
 $border-modal: #c6c6c6;
 $border-card: #ececec;
 $secondary-background: #f1f1f1;
+$promo-background: #f8f8f8;
 
 
 // Брейкпоинты

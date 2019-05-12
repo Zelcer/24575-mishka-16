@@ -1,6 +1,21 @@
+.map {
+  height: 457px;
+}
+
+.map__img {
+  position: absolute;
+}
+
 .map svg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-30%, -85%);
+}
+
+@media (min-width: $desktop-width) {
+  .map__img {
+    width: 525px;
+    height: 457px;
+  }
 }

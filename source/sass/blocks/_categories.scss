@@ -6,8 +6,8 @@
 .categories__button {
   display: flex;
   justify-content: space-between;
-  padding-top: 26px;
-  padding-bottom: 16px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   padding-left: 30px;
 
   font-size: 19px;
@@ -53,6 +53,7 @@
 .categories__button-text {
   width: 111px;
   margin: 0;
+  padding-top: 4px;
 }
 
 .categories__button svg {
@@ -81,8 +82,8 @@
 
   .categories__button {
     width: 334px;
-    padding-top: 28px;
-    padding-bottom: 39px;
+    padding-top: 30px;
+    padding-bottom: 37px;
     padding-left: 36px;
 
     font-size: 20px;
@@ -95,6 +96,10 @@
     &--toys {
       padding-right: 34px;
     }
+  }
+
+  .categories__button-text {
+    padding-top: 0;
   }
 }
 

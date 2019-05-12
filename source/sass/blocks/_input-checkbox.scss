@@ -50,6 +50,11 @@
   background-size: 30px 17px;
 }
 
+.input-checkbox__input:focus + .input-checkbox__label {
+  outline: 1px solid $accent-color-light;
+  outline-offset: 13px;
+}
+
 @media (min-width: $tablet-width) {
   .input-checkbox {
     width: 237px;
@@ -75,6 +80,10 @@
     top: -1px;
 
     background-size: 33px 22px;
+  }
+
+  .input-checkbox__input:focus + .input-checkbox__label {
+    outline-offset: 17px;
   }
 }
 

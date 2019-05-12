@@ -39,10 +39,6 @@
     border-color: $accent-border;
   }
 
-  &:active {
-    background-color: $accent-border;
-  }
-
   &--tel-icon,
   &--mail-icon {
     padding-top: 19px;
@@ -56,6 +52,12 @@
   right: 6px;
 
   opacity: 0.2;
+}
+
+.input-text__input:hover + .input-text__icon,
+.input-text__input:focus + .input-text__icon {
+  fill: $accent-color-light;
+  opacity: 1;
 }
 
 @media (min-width: $tablet-width) {
