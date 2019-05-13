@@ -4,6 +4,8 @@
 
 .map__img {
   position: absolute;
+  width: 322px;
+  height: auto;
 }
 
 .map svg {
@@ -11,6 +13,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-30%, -85%);
+}
+
+@media (min-width: $tablet-width) {
+  .map__img {
+    width: 768px;
+  }
 }
 
 @media (min-width: $desktop-width) {
