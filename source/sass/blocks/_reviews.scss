@@ -33,6 +33,7 @@
 }
 
 .reviews__text {
+  width: 260px;
   margin: 0;
   margin-bottom: 27px;
 
@@ -92,6 +93,11 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position-x: -20px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews__title {
@@ -110,7 +116,9 @@
   }
 
   .reviews__text {
+    width: 643px;
     margin-bottom: 57px;
+
     font-size: 17px;
   }
 

@@ -10,7 +10,11 @@
     <header class="page-header page-header--closed page-header--nojs">
       <div class="page-header__inner">
         <a class="page-header__logo-link" href="index.html" title="Ссылка на главную страницу магазина">
-          <img class="page-header__logo-img" src="./img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 772px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+          </picture>
         </a>
         <button class="page-header__toggle" type="button" aria-label="Открыть выпадающее меню"></button>
       </div>
@@ -70,7 +74,11 @@
           <ul class="catalog__list">
             <li class="catalog__item product-card">
               <a class="product-card__img-link" href="product-1.html">
-                <img class="product-card__img" src="./img/photo-hare-mobile@1x.jpg" alt="Товар зайчик-попрыгайчик" width="260" height="195">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                  <source media="(min-width: 772px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                  <img class="product-card__img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Товар зайчик-попрыгайчик">
+                </picture>
               </a>
               <div class="product-card__info">
                 <a class="product-card__link" href="product-1.html">
@@ -88,7 +96,11 @@
             </li>
             <li class="catalog__item product-card">
               <a class="product-card__img-link" href="product-2.html">
-                  <img class="product-card__img" src="./img/photo-bowl-mobile@1x.jpg" alt="Товар корзинка для белья" width="260" height="195">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                  <source media="(min-width: 772px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                  <img class="product-card__img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Товар корзинка для белья">
+                </picture>
               </a>
               <div class="product-card__info">
                 <a class="product-card__link" href="product-2.html">
@@ -106,7 +118,11 @@
             </li>
             <li class="catalog__item product-card">
               <a class="product-card__img-link" href="product-3.html">
-                  <img class="product-card__img" src="./img/photo-toys-mobile@1x.jpg" alt="Товар большая корзинка для игрушек" width="260" height="195">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                  <source media="(min-width: 772px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                  <img class="product-card__img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Товар большая корзинка для игрушек">
+                </picture>
               </a>
               <div class="product-card__info">
                 <a class="product-card__link" href="product-3.html">
@@ -135,7 +151,11 @@
           </svg>
           <h2 class="product-video__title">Процесс производства</h2>
           <div class="product-video__film">
-            <img class="product-video__screen" src="./img/video-mobile@1x.jpg" alt="Видео заставка о процессе производства продукции" width="260" height="150">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 772px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="product-video__screen" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео заставка о процессе производства продукции">
+            </picture>
             <button class="product-video__button-play" type="button">
               <svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100.678px" height="76.891px" viewBox="247.3 382.56 100.678 76.891" enable-background="new 247.3 382.56 100.678 76.891" xml:space="preserve">
                 <g>
@@ -244,7 +264,8 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
