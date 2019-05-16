@@ -18,12 +18,12 @@
   color: $primary-text-color;
 }
 
-.copyright__link path {
+.copyright__link svg {
   fill: $accent-color-light;
 }
 
-.copyright__link:hover path,
-.copyright__link:focus path {
+.copyright__link:hover svg,
+.copyright__link:focus svg {
   fill: $accent-color-dark-interaction;
 }
 

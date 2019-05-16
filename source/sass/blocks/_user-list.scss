@@ -48,14 +48,8 @@
 .user-list__link--search:focus svg,
 .user-list__link--basket:hover svg,
 .user-list__link--basket:focus svg {
-  opacity: 1;
-}
-
-.user-list__link--search:hover path,
-.user-list__link--search:focus path,
-.user-list__link--basket:hover path,
-.user-list__link--basket:focus path {
   fill: $accent-color-light;
+  opacity: 1;
 }
 
 .user-list__link--search:active svg,

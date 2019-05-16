@@ -85,10 +85,6 @@
 .product-card__button:hover svg,
 .product-card__button:focus svg {
   opacity: 1;
-}
-
-.product-card__button:hover path,
-.product-card__button:focus path {
   fill: $accent-color-light;
 }
 

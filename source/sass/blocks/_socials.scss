@@ -13,8 +13,8 @@
   align-self: center;
 }
 
-.socials__link:hover path,
-.socials__link:focus path {
+.socials__link:hover svg,
+.socials__link:focus svg {
   fill: $accent-color-dark-interaction;
 }
 

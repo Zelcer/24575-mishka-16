@@ -37,6 +37,7 @@
 
 .about-us__item svg {
   position: absolute;
+  fill: $accent-color-light;
 }
 
 .about-us__item--ecology svg {
@@ -67,10 +68,6 @@
 .about-us__item--box svg {
   top: 4px;
   left: 3px;
-}
-
-.about-us__item path {
-  fill: $accent-color-light;
 }
 
 @media (min-width: $tablet-width) {
