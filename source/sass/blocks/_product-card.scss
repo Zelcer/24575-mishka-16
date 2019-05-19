@@ -26,7 +26,7 @@
 
 .product-card__link {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 
   line-height: 24px;
   color: $primary-text-color;
@@ -169,6 +169,7 @@
 
   .product-card__link {
     width: 100%;
+    margin-bottom: 5px;
   }
 
   .product-card__text {
