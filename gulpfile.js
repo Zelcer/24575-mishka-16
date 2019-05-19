@@ -13,6 +13,7 @@ var imagemin = require("gulp-imagemin");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var uglify = require("gulp-uglify")
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -56,11 +57,20 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("uglify", function () {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(rename({
+      suffix: ".min",
+      extname: ".js"
+    }))
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/img/**",
-      "source/js/**"
+      "source/img/**"
     ], {
       base: "source"
     })
@@ -90,5 +100,5 @@ gulp.task("refresh", function (done) {
   done();
 })
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "uglify", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
