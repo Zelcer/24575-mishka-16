@@ -61,15 +61,6 @@
   background-repeat: no-repeat;
 }
 
-.page-header--nojs .page-header__toggle {
-  display: none;
-}
-
-.page-header--nojs .page-header__main-nav,
-.page-header--nojs .page-header__user-menu {
-  display: block;
-}
-
 .page-header__text {
   display: none;
   margin: 0;
@@ -86,6 +77,15 @@
 
   .page-header--closed .page-header__user-menu {
     display: none;
+  }
+
+  .page-header--nojs .page-header__toggle {
+    display: none;
+  }
+
+  .page-header--nojs .page-header__main-nav,
+  .page-header--nojs .page-header__user-menu {
+    display: block;
   }
 }
 
