@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Каталог товаров интернет магазина Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -67,7 +69,7 @@
       <div class="page-header__user-menu user-menu" aria-label="Меню пользователя">
         <ul class="user-menu__list user-list">
           <li class="user-list__item">
-            <a class="user-list__link user-list__link--search" href="search.html">
+            <a class="user-list__link user-list__link--search" href="search.html" aria-label="Поиск по сайту">
               <svg width="17.6px" height="17.6px" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
                 <use xlink:href="#icon-search"></use>
               </svg>
@@ -204,7 +206,7 @@
               <source media="(min-width: 772px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img class="product-video__screen" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео заставка о процессе производства продукции">
             </picture>
-            <button class="product-video__button-play" type="button">
+            <button class="product-video__button-play" type="button" aria-label="Воспроизвести видео">
               <svg width="100.678px" height="76.891px" enable-background="new 247.3 382.56 100.678 76.891" xml:space="preserve">
                 <use xlink:href="#icon-play"></use>
               </svg>
