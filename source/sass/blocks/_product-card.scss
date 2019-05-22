@@ -152,6 +152,11 @@
   .product-card {
     flex-direction: column;
     width: 316px;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
   }
 
   .product-card__img-link {
