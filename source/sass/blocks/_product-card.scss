@@ -26,7 +26,7 @@
 
 .product-card__link {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 
   line-height: 24px;
   color: $primary-text-color;
@@ -118,6 +118,10 @@
     box-sizing: border-box;
   }
 
+  .product-card__link {
+    margin-bottom: 8px;
+  }
+
   .product-card__title {
     font-size: 20px;
   }
@@ -152,7 +156,6 @@
 
   .product-card__img-link {
     width: 100%;
-    min-height: 462px; // Временно
     margin-bottom: 25px;
   }
 
